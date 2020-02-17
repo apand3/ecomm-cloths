@@ -4,7 +4,14 @@ import 'firebase/firestore';
 import 'firebase/auth';
 const config=
 {
-    
+  apiKey: "AIzaSyCtyBrbBMV53q1J3ms7XkKGWAMu-H8pRpw",
+  authDomain: "ecomm-db-react.firebaseapp.com",
+  databaseURL: "https://ecomm-db-react.firebaseio.com",
+  projectId: "ecomm-db-react",
+  storageBucket: "ecomm-db-react.appspot.com",
+  messagingSenderId: "228162053123",
+  appId: "1:228162053123:web:e3afdf79bd67de24329a36",
+  measurementId: "G-8LV9EKH1LR"
   };
   firebase.initializeApp(config);
 
