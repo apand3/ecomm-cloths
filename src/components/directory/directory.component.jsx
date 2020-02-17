@@ -8,12 +8,12 @@ constructor()
     super();
     this.state={
     
-        sections : [
+      sections: [
         {
           title: 'hats',
           imageUrl: 'https://i.ibb.co/cvpntL1/hats.png',
           id: 1,
-          linkUrl: '/hats'
+          linkUrl: 'hats'
         },
         {
           title: 'jackets',
@@ -49,13 +49,11 @@ constructor()
 render()
 {
     return(
-<div className="directory-menu">
-    {
-        this.state.sections.map(({id,...otherSectionIds})=>(
-            <MenuItem key={id} {...otherSectionIds}></MenuItem>
-        ))
-    }
-</div>
+<div className='directory-menu'>
+        {this.state.sections.map(({ id, ...otherSectionProps }) => (
+          <MenuItem key={id} {...otherSectionProps} />
+        ))}
+      </div>
 
     )
 
